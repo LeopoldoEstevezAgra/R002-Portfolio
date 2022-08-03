@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/icon.ico" type="image/x-icon">
+
+    <title>Leo's page</title>
+</head>
+<body>
+    <header>
+        <a href=".">
+            <img src="./assets/Logo.png" alt="logo" width="100">
+        </a>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h3 class="hero__presentation">Hi, I'm</h3>
+            <h1>Leopoldo Estévez</h1>
+
+            <h2>I'm a software developer, photographer & digital creator</h2>
+        </section>
+
+        <section id="work">
+            <h2 class="section-header"> Work </h2>
+
+            <p>
+                I'm a full stack software developer based in Spain. I'm someone
+                that loves being productive and creating systems taht allow me to create more
+                with less. Currently developing for 
+                <a class="link" href="https://inovalabs.es" target="_blank"> Inovalabs </a>.
+            </p>
+
+            <button class="button-container">
+                <a href="#" class="button">
+                    Portfolio
+                    <img src="./assets/Arrow.svg" alt="arrow">
+                </a>
+            </button>
+        </section>
+
+        <section id="biography">
+            <h2 class="section-header"> Biography </h2>
+
+            <div class="experience">
+                <div class="experience__year">
+                    2019
+                </div>
+                <div class="experience__description">
+                    Completed the <a href="https://www.cebem.net/index.php/es/ciclos-fp/grado-superior/desenvolvemento-de-aplicacions-multiplataforma" class="link" target="_blank">
+                        Multiplatform Development Vocational Study
+                    </a>
+                    at 
+                    <a href="https://www.cebem.net/index.php/es" class="link">
+                        CPR Cebem
+                    </a>.
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience__year">
+                    2019
+                </div>
+                <div class="experience__description">
+                    Completed an internship and worked at
+                    <a class="link" href="https://inovalabs.es" target="_blank"> 
+                        Inovalabs 
+                    </a>.
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience__year">
+                    2019 to today
+                </div>
+                <div class="experience__description">
+                    Studying Computer Science at
+                    <a href="https://www.udc.es/" class="link" target="_blank">
+                        University of A Coruña
+                    </a>
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience__year">
+                    2020 to today
+                </div>
+                <div class="experience__description">
+                    Working as a full stack software developer at 
+                    <a class="link" href="https://inovalabs.es" target="_blank"> 
+                        Inovalabs 
+                    </a>.
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-header"> Something to say? </h2>
+
+            <div class="sn-link">
+                <img class="svg-icon nv-link__icon" src="./assets/github.svg" alt="github-icon">
+                <a href="https://github.com/LeopoldoEstevezAgra" class="sn-link__text" target="_blank">@LeopoldoEstevezAgra</a>
+            </div>
+
+            <div class="sn-link">
+                <img class="svg-icon nv-link__icon" src="./assets/linkedin.svg" alt="linkedin-icon">
+                <a href="https://www.linkedin.com/in/leopoldo-est%C3%A9vez-agra/" class="sn-link__text" target="_blank">@leopoldo-estévez-agra</a>
+            </div>
+
+            <div class="sn-link">
+                <img class="svg-icon nv-link__icon" src="./assets/instagram.svg" alt="instagram-icon">
+                <a href="https://www.instagram.com/leopoldoesteveza/" class="sn-link__text" target="_blank">@leopoldoesteveza</a>
+            </div>
+
+            <form id="cta-form">
+                <div class="form-input-wrapper">
+                    <input id="cta-email" placeholder="email" class="textfield" type="email" name="call-to-action-mail" id="cta-email">
+                    <label for="cta-email"> Email </label>
+                </div>
+
+                <div class="form-input-wrapper">
+                    <textarea id="cta-body" placeholder="Content" rows="10" class="textarea" name="call-to-action-body" ></textarea>
+                    <label for="cta-body"> Content </label>
+                </div>
+
+
+                <button type="submit" class="button-container">
+                    <div class="button">
+                        Send
+                        <img src="./assets/Arrow.svg" alt="arrow">
+                    </div>
+                </button>
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
