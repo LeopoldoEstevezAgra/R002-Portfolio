@@ -33,6 +33,7 @@ body {
     font-size: var(--typography-size-body);
     letter-spacing: var(--typography-spacing-body);
     line-height: 105%;
+    overflow-x: hidden;
 
 }
 
