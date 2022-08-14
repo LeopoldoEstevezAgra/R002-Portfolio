@@ -34,7 +34,6 @@ body {
     letter-spacing: var(--typography-spacing-body);
     line-height: 105%;
     overflow-x: hidden;
-
 }
 
 header {
@@ -83,6 +82,17 @@ a {
     margin-bottom: 2rem;
 }
 
+.link {
+    text-decoration: none;
+    color: var(--color-accent);
+
+    transition: color 0.2s ease-in;
+}
+
+.link:hover {
+    color: var(--color-primary);
+}
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -90,6 +100,29 @@ a {
     margin-top: 2rem;
     border: none;
     background-color: var(--color-background);
+}
+
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    padding: 1rem 3rem;
+    border-radius: 100rem;
+    cursor: pointer;
+
+    font-size: var(--typography-size-body-large);
+    font-weight: 700;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    transition: all 0.1s ease-out;
+}
+
+.button:active {
+    transform: translateY(2px);
+    background-color: var(--color-accent);
 }
 
 .experience {
@@ -121,7 +154,9 @@ a {
 .nv-link__icon {
     width: 10%;
     height: 2rem;
+    filter: invert(94%) sepia(31%) saturate(4501%) hue-rotate(319deg) brightness(103%) contrast(102%);
 }
+
 .sn-link__text {
     flex-grow: 1;
     text-decoration: none;
@@ -139,66 +174,25 @@ a {
 .form-input-wrapper {
     display: flex;
     flex-direction: column;
-
 }
 
-.textfield {
-    width: 100%;
-    height: 3rem;
-    background-color: var(--color-background);
-    border: 0.3rem solid var(--color-primary);
-    border-radius: 1rem;
-    padding: 0 1rem;
-    color: var(--color-white);
-    position: relative;
-}
-
-.textfield::placeholder {
-    opacity: 0;
-}
-
-.textfield ~ label {
-    color: var(--color-white);
-    background-color: var(--color-background);
-    position: absolute;
-    transform: translateY(50%);
-    margin: 0 1.5rem;
-    padding: 0 1rem;
-
-    transition: transform 0.2s ease-out;
-}
-
-.textfield:focus { 
-    outline: none;
-    transition: box-shadow 0.2s ease-out;
-    box-shadow: 0 0 0 0.2rem var(--color-background), 0 0 0 0.4rem var(--color-accent);
-}
-
-.textfield:focus ~ label {
-    transform: translateY(-50%);
-}
-
-.textfield:not(:placeholder-shown) ~ label {
-    transform: translateY(-50%);
-}
-
-.textarea {
+.input {
     width: 100%;
     background-color: var(--color-background);
+
     border: 0.3rem solid var(--color-primary);
     border-radius: 1rem;
     padding: 1rem 1rem;
     color: var(--color-white);
     position: relative;
 
-    resize: none;
 }
 
-.textarea::placeholder {
+.input::placeholder {
     opacity: 0;
 }
 
-.textarea ~ label {
+.input ~ label {
     color: var(--color-white);
     background-color: var(--color-background);
     position: absolute;
@@ -209,18 +203,26 @@ a {
     transition: transform 0.2s ease-out;
 }
 
-.textarea:focus { 
+.input:focus { 
     outline: none;
     transition: box-shadow 0.2s ease-out;
     box-shadow: 0 0 0 0.2rem var(--color-background), 0 0 0 0.4rem var(--color-accent);
 }
 
-.textarea:focus ~ label {
+.input:focus ~ label {
     transform: translateY(-50%);
 }
 
-.textarea:not(:placeholder-shown) ~ label {
+.input:not(:placeholder-shown) ~ label {
     transform: translateY(-50%);
+}
+
+.textfield {
+    height: 3rem;
+}
+
+.textarea {
+    resize: none;
 }
 
 @media only screen and (min-width: 920px) {
@@ -231,67 +233,3 @@ a {
         padding: 0 25%;
     }
 }
-
-
-/* Atoms */
-.link {
-    text-decoration: none;
-    color: var(--color-accent);
-
-    transition: color 0.2s ease-in;
-}
-
-.link:hover {
-    color: var(--color-primary);
-}
-
-.button {
-    background-color: var(--color-primary);
-    color: var(--color-dark);
-    padding: 1rem 3rem;
-    border-radius: 100rem;
-
-    font-size: var(--typography-size-body-large);
-    font-weight: 700;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-/* Utils */
-.svg-icon {
-    filter: invert(94%) sepia(31%) saturate(4501%) hue-rotate(319deg) brightness(103%) contrast(102%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
