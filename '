@@ -106,17 +106,17 @@
 
             <div class="sn-link">
                 <img class="nv-link__icon" src="./assets/github.svg" alt="github-icon">
-                <a href="https://github.com/LeopoldoEstevezAgra" width="35" height="35" class="sn-link__text" target="_blank">@LeopoldoEstevezAgra</a>
+                <a href="https://github.com/LeopoldoEstevezAgra" class="sn-link__text" target="_blank">@LeopoldoEstevezAgra</a>
             </div>
 
             <div class="sn-link">
                 <img class="nv-link__icon" src="./assets/linkedin.svg" alt="linkedin-icon">
-                <a href="https://www.linkedin.com/in/leopoldo-est%C3%A9vez-agra/" width="35" height="35" class="sn-link__text" target="_blank">@leopoldo-estévez-agra</a>
+                <a href="https://www.linkedin.com/in/leopoldo-est%C3%A9vez-agra/" class="sn-link__text" target="_blank">@leopoldo-estévez-agra</a>
             </div>
 
             <div class="sn-link">
                 <img class="nv-link__icon" src="./assets/instagram.svg" alt="instagram-icon">
-                <a href="https://www.instagram.com/leopoldoesteveza/" width="35" height="35" class="sn-link__text" target="_blank">@leopoldoesteveza</a>
+                <a href="https://www.instagram.com/leopoldoesteveza/" class="sn-link__text" target="_blank">@leopoldoesteveza</a>
             </div>
 
             <div id="cta-message">
@@ -137,7 +137,7 @@
                 <button type="submit" class="button-container">
                     <div id="cta-button" class="button">
                         Send
-                        <img src="./assets/Arrow.svg" alt="arrow" width="35" height="35">
+                        <img src="./assets/Arrow.svg" alt="arrow">
                     </div>
                 </button>
             </form>
