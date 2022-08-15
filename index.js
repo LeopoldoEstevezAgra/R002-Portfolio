@@ -42,12 +42,14 @@ form.addEventListener('submit', (e) => {
 });
 
 let themeButton = document.getElementById('theme-toggle')
+let logoImg = document.getElementById('logo')
 let theme = localStorage.getItem('theme');
 
 if (theme=== 'light') {
     document.documentElement.setAttribute('data-theme', theme);
     themeButton.innerHTML = '<img src="./assets/moon.svg" alt="lightTheme-moon-icon">'
     localStorage.setItem('theme', 'light');
+    logo.src='./assets/Logo-light.png';
 } else {
     document.documentElement.setAttribute('data-theme', 'dark');
     themeButton.innerHTML = '<img src="./assets/sun.svg" alt="lightTheme-sun-icon">'
@@ -59,11 +61,13 @@ const switchTheme = () => {
     if (theme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light');
         themeButton.innerHTML = '<img src="./assets/moon.svg" alt="lightTheme-moon-icon">'
+        logo.src='./assets/Logo-light.png';
         theme = 'light';
         localStorage.setItem('theme', 'light');
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
         themeButton.innerHTML = '<img src="./assets/sun.svg" alt="lightTheme-sun-icon">'
+        logo.src='./assets/Logo.png';
         theme = 'dark';
         localStorage.setItem('theme', 'dark');
     } 
