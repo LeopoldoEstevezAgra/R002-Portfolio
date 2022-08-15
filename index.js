@@ -39,6 +39,34 @@ form.addEventListener('submit', (e) => {
             <img src="./assets/Arrow.svg" alt="arrow">
         `
     });
-})
+});
 
+let themeButton = document.getElementById('theme-toggle')
+let theme = localStorage.getItem('theme');
 
+if (theme=== 'light') {
+    document.documentElement.setAttribute('data-theme', theme);
+    themeButton.innerHTML = '<img src="./assets/moon.svg" alt="lightTheme-moon-icon">'
+    localStorage.setItem('theme', 'light');
+} else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    themeButton.innerHTML = '<img src="./assets/sun.svg" alt="lightTheme-sun-icon">'
+    theme = 'dark';
+    localStorage.setItem('theme', 'dark');
+}
+
+const switchTheme = () => {
+    if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        themeButton.innerHTML = '<img src="./assets/moon.svg" alt="lightTheme-moon-icon">'
+        theme = 'light';
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeButton.innerHTML = '<img src="./assets/sun.svg" alt="lightTheme-sun-icon">'
+        theme = 'dark';
+        localStorage.setItem('theme', 'dark');
+    } 
+}
+
+themeButton.addEventListener('click', switchTheme)
