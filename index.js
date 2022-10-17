@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
 
     buttonText.innerHTML = 'Sending...';
 
-    fetch('/api/form', {
+    fetch('/api/form-telegram', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
